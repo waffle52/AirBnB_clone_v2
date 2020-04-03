@@ -23,7 +23,7 @@ This is the command interpreter for the AirBnB clone. Console stores and retriev
 * quit/EOF - quit the console
 * help - see descriptions of commands
 
-To start, navigate to the project folder and enter `./console.py` in the shell.
+Enter `./console.py` in the project directory via shell.
 
 #### Create
 `create <class name>`
@@ -53,7 +53,9 @@ Ex:
 Ex:
 `help` or `help quit`
 
-Additionally, the console supports `<class name>.<command>(<parameters>)` syntax.
+Console also supports the following format:
+`<class name>.<command>(<parameters>)` syntax.
+
 Ex:
 `City.show(my_city_id)`
 
