@@ -1,4 +1,7 @@
 # HBNB
+
+Version two of the AirBnB clone as part of the Hokberton School of Software Engineering Curriculum
+
 ## AirBnB Clone
 
 This is the command interpreter for the AirBnB clone. Console stores and retrieves objects in JSON.
