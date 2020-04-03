@@ -11,7 +11,6 @@ from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
 from shlex import split
-from os import getenv
 
 
 class HBNBCommand(cmd.Cmd):
@@ -58,8 +57,6 @@ class HBNBCommand(cmd.Cmd):
                         setattr(obj, arg[0], arg[1])
                     except:
                         pass
-
-
             obj.save()
             print("{}".format(obj.id))
         except SyntaxError:
@@ -136,7 +133,6 @@ class HBNBCommand(cmd.Cmd):
             NameError: when there is no object taht has the name
         """
         objects = storage.all()
-
         my_list = []
         if not line:
             for key in objects:
