@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# sets up your web servers for the deployment of web_static
+# This sets up your web servers for the deployment of web_static
 
 apt-get -y update
 apt-get -y install nginx
@@ -7,6 +7,7 @@ apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 
 mkdir -p /data/web_static/releases/test /data/web_static/shared
+
 echo "Holberton School" > /data/web_static/releases/test/index.html
 
 ln -sf /data/web_static/releases/test /data/web_static/current
